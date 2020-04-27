@@ -1,0 +1,423 @@
+/* ===== MAIN.CSS goes here ===== */
+
+body{
+    /*background-color: #263238;*/
+    /*color: rgba(255,255,255,0.8);*/
+    color:dodgerblue;
+}
+.navbar-fixed {
+    /*margin: 40px;*/
+    background: rgba(0,0,0,0.3);
+    top: 0px;
+    height: 500px;
+    position:fixed;
+    border-bottom: 2px solid dodgerblue;
+    transition: 2s;
+}
+.navbar-fixed ul {
+    /*background: rgba(0,0,0,0.3);*/
+
+}
+
+.navbar-fixed ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 30px;
+    color: white;
+    font-size: 24;
+}
+.navbar-fixed a {
+    color: dodgerblue;
+}
+.navbar-fixed img {
+    margin-top: -10px;
+    /*width:20%;*/
+}
+
+
+
+
+.blueglow {
+  
+  font-size: 20px;
+  color: #fff !important;
+  /*text-align: center;*/
+/*  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;*/
+      /*text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00BFFF, 0 0 40px #00BFFF, 0 0 50px #00BFFF, 0 0 60px #00BFFF, 0 0 70px #00BFFF;*/
+  /*text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #1E90FF, 0 0 40px #1E90FF, 0 0 50px #1E90FF, 0 0 60px #1E90FF, 0 0 70px #1E90FF;*/
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #1E90FF;
+
+}
+
+
+.blueglow:hover {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00BFFF, 0 0 40px #00BFFF, 0 0 50px #00BFFF, 0 0 60px #00BFFF, 0 0 70px #00BFFF;
+
+}
+
+
+
+
+
+#landing{
+    height: 100vh;
+    /*background-image: url('https://user-images.githubusercontent.com/26179770/37276818-e3e358f4-2608-11e8-9659-05585e92a588.png');*/
+    
+    background-image: url('../img/bg/gaming.jpg');
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+.landing-container {
+    position:relative;
+    z-index: 1;
+    margin: 0 auto !important;
+}
+.landing-overlay{
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left:0;
+      height: 100vh;
+      width: 100vw;
+      /*background-color:rgba(215,19,137,0.39);*/
+      background-color:rgba(40,100,200,0.70);
+      display: table;
+      overflow: hidden;
+
+
+    /*COLOR ANIMATION!*/
+    animation: color 15s ease-in infinite;
+
+}/*Overlay Animation!*/
+
+@keyframes color {
+
+    0% {
+        background:rgba(227, 242, 253, 0.3);
+    }
+    10%{
+        background:rgba(186, 85, 211, 0.3);
+    }
+    20%{
+        background:rgba(30, 144, 255, 0.3);
+        }
+    30% {    
+        background:rgba(0, 250, 154, 0.3);
+        }
+    40%{
+        background:rgba(255, 255, 0, 0.3);
+        }
+    50% {    
+        background:rgba(255, 165, 0, 0.3);
+        }
+    60%{    
+        background:rgba(255, 127, 80, 0.3);
+        }
+    70%{
+        background:rgba(255, 69, 0, 0.3);
+        }
+    80%{    
+        background:rgba(21, 101, 192, 0.3);
+        }
+    90%{
+        background:rgba(13, 71, 161, 0.3);
+    }
+    100%{
+        background:rgba(0, 245, 255, 0.3);
+    }
+}/*ENDoverlay*/
+
+
+
+
+
+
+
+
+#welcometo{
+    font-family: 'Dancing Script', cursive;
+    margin-top: 15vh;
+    margin-bottom: -5vh;
+    color:white;
+}
+.glow {
+  /*font-size: 80px;*/
+  /*color: #fff;*/
+  /*text-align: center;*/
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 60px crimson, 0 0 70px crimson, 0 0 80px crimson;
+  }
+}
+
+
+/*#DC143C CRIMSON*/
+
+
+
+
+
+
+
+
+
+
+.landing-container .kingofnerdslogo {
+    
+    height: 80vh;
+    top: 50%;
+    /*transform: translate(0%, 20%);*/
+}
+
+
+
+.parallax-container {
+    border-top, border-bottom: 2px solid dodgerblue;
+    backdrop-filter: blur(10px);
+}
+
+
+.mystreams {
+  overflow: inherit !important;
+}
+
+
+.overlay {
+    /*position: relative;*/
+    top: 50%;
+    transform: translate(0%, 40%);
+    /*background: rgba(40,40,100,0.6);*/
+    /*background-color:rgba(40,200,255,0.70);*/
+          background: rgba(49,100,200,0.7);
+
+    border-radius: 20px;
+    border: 2px solid dodgerblue;
+    /*font-family: 'Cedarville Cursive', cursive;*/
+    font-family: 'Dancing Script', cursive;
+    /*font-family: 'Lato', sans-serif;*/
+}
+
+
+.endquote {
+    padding-top: 3%;
+    height: 10%;
+}
+
+footer {
+    
+    background: rgb(60,60,60) !important;
+    /*border-top: 2px solid dodgerblue;*/
+
+}
+
+.page-footer {
+  margin-top: 40px solid #263238 !important;
+  /*background-color: #263238 !important;*/
+
+}
+.page-footer .container {
+
+  padding-top: 30px;
+  /*height: 200px;*/
+  color:white !important;
+  text-shadow: 2px 2px 4px #000000;
+    /*border-bottom: 2px solid dodgerblue;*/
+}
+
+
+.footercontainer {
+background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,.9) 0%, rgba(9,9,121,.9) 50%, rgba(0,212,255,.9) 100%);
+margin-bottom:-20px;
+}
+.footer-copyright {
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+            0 5px 15px 0 rgba(0,0,0,0.08) !important;
+
+}
+
+#intro{
+    /*margin-top: 10px;*/
+    padding: 100px;
+    height: auto !important;
+    color: white;
+    /*background-image: url('https://user-images.githubusercontent.com/26179770/37276818-e3e358f4-2608-11e8-9659-05585e92a588.png');*/
+    
+    background-image: url('../img/bg/rain.jpg');
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+
+}
+
+  .abouttext{
+      font-size: 20px;
+    }
+
+.frostedglass {
+    padding: 50px !important;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, .35);  
+    backdrop-filter: blur(5px);
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+            0 5px 15px 0 rgba(0,0,0,0.08);
+}
+
+
+.frostedglassback {
+    padding: 50px !important;
+    border-radius: 8px;
+/*    background-color: rgba(255, 255, 255, .35); */
+
+
+    background: rgba(2,0,36,0.35);
+    background: radial-gradient(circle, rgba(2,0,36,0.35) 0%, rgba(9,9,121,0.35) 50%, rgba(0,212,255,0.35) 100%);
+
+
+
+
+    backdrop-filter: blur(5px);
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+            0 5px 15px 0 rgba(0,0,0,0.08);
+}
+
+.frostedglassopague{
+    padding: 50px !important;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, .75);  
+    backdrop-filter: blur(5px);
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+            0 5px 15px 0 rgba(0,0,0,0.08);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#platforms {
+  background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);
+  padding-top: -30px;
+  padding: 40px;
+    color:white !important;
+  text-shadow: 2px 2px 4px #000000;
+    /*border-bottom: 2px solid dodgerblue;*/
+
+
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+            0 5px 15px 0 rgba(0,0,0,0.08);
+
+}
+
+#platformfooter {
+  background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);
+}
+
+
+.sociallogo {
+  margin-bottom: 40px;
+  width: 40%;
+  border: 2px solid dodgerblue;
+  border-radius: 8px;
+}
+.card {
+  border: 2px solid dodgerblue;
+  border-radius: 8px;
+}
+
+#contact {
+    background-image: url('../img/bg/unsplash.jpg');
+    padding: 100px;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+    color:white;
+/*
+    border-top: 50px solid #263238;
+    border-bottom: 50px solid #263238;*/
+/*background-color: #263238 !important;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#work{
+    background-color: rgb(61,61,61);
+}
+
+#p1{
+    height: 350px;
+}
+
+#p500 {
+    /*margin-top: 50px;*/
+    padding-top:40px;
+    height: 500px;
+}
+
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
