@@ -344,6 +344,14 @@ box-shadow: 0px 0px 112px 69px rgba(0,0,0,0.7) inset;
 
 
 
+.frostbuttons {
+  background: rgba(2,0,36,0.35);
+    background: radial-gradient(circle, rgba(2,0,36,0.35) 0%, rgba(9,9,121,0.35) 50%, rgba(0,212,255,0.35) 100%);
+}
+
+
+
+
 .frostedglass {
     padding: 50px !important;
     border-radius: 8px;
