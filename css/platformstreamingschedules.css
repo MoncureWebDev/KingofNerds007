@@ -28,14 +28,16 @@
 
 
 .platformstreamingschedules {
+	overflow-x: hidden;
+  	overflow-y: auto;
 	/*width: 60%;*/
 	margin-top: 40px;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	overflow: hidden;
 	border-radius: 20px;
-	border: 1px solid dodgerblue;
-	box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+	border: 3px solid white;
+	box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
 	box-shadow: 0 0 20px #fff, 0 0 30px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 60px crimson, 0 0 70px crimson, 0 0 80px crimson;
 	height:auto;
 	background: rgba(100,100,200,0.5);
@@ -55,11 +57,22 @@
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
  
 }
-  #twitchlink:hover {
-    padding:3px;
-    border:2px solid purple;
-    border-radius:5px;
-    background:purple;
-    color:white;
-    transition:0.5s ease;
+
+/*  #twitchbutton {
+  	width: 20%;
+  	border-radius: 10px;
+  	border: 1px solid white;
+  }
+  #youtubebutton {
+  	width: 20%;
+  	border-radius: 10px;
+  	border: 1px solid white;
+  }*/
+  #platformbutton {
+  	width: 20%;
+  	border-radius: 10px;
+  	border: 2px solid white;
+  }
+  #platformbutton:hover {
+  	box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #1E90FF;
   }

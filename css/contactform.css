@@ -1,0 +1,40 @@
+#contact {
+    background-image: url('../img/bg/unsplash.jpg');
+    padding: 100px;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+    color:white;
+/*
+    border-top: 50px solid #263238;
+    border-bottom: 50px solid #263238;*/
+/*background-color: #263238 !important;*/
+}
+
+.frostbuttons {
+  background: rgba(2,0,36,0.35);
+    background: radial-gradient(circle, rgba(2,0,36,0.35) 0%, rgba(9,9,121,0.35) 50%, rgba(0,212,255,0.35) 100%);
+}
+
+#sendbutton {
+}
+
+.contacticons a{
+  /*margin: 5%;*/
+  width: 60px;
+  height: 60px;
+}
+.contacticons .fa{
+  margin-top: 10px;
+  font-size: 40px;
+
+}
+.contacticons .material-icons{
+  margin-top: 10px;
+  font-size: 40px;
+
+}
+
