@@ -1,18 +1,25 @@
 /* ===== MAIN.CSS goes here ===== */
+html {
+  scroll-behavior: smooth;
+}
 
 body{
     /*background-color: #263238;*/
     /*color: rgba(255,255,255,0.8);*/
     color:dodgerblue;
 }
+
+header {
+  margin-top: -22px;
+}
 .navbar-fixed {
     /*margin: 40px;*/
-    background: rgba(0,0,0,0.3);
+/*    background: rgba(0,0,0,0.3);
     top: 0px;
-    height: 500px;
+    height: 100%;
     position:fixed;
     border-bottom: 2px solid dodgerblue;
-    transition: 2s;
+    transition: 2s;*/
 }
 .navbar-fixed ul {
     /*background: rgba(0,0,0,0.3);*/
@@ -20,17 +27,17 @@ body{
 }
 
 .navbar-fixed ul li {
-    list-style-type: none;
+ /*   list-style-type: none;
     display: inline-block;
     padding: 0px 30px;
     color: white;
-    font-size: 24;
+    font-size: 24;*/
 }
 .navbar-fixed a {
-    color: dodgerblue;
+  /*  color: dodgerblue;*/
 }
 .navbar-fixed img {
-    margin-top: -10px;
+    /*margin-top: -10px;*/
     /*width:20%;*/
 }
 
@@ -61,7 +68,46 @@ body{
 
 
 
+
+
+
+
+
+
+/******************************************************** LANDING AREA! */
+
+
+
+#welcometo{
+    font-family: 'Dancing Script', cursive;
+    margin-top: 15vh;
+    margin-bottom: -5vh;
+    color:white;
+    text-shadow: 0 0 20px #fff, 0 0 30px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 60px crimson, 0 0 70px crimson, 0 0 80px crimson;
+}
+
+
+
+.glow {
+  /*font-size: 80px;*/
+  /*color: #fff;*/
+  /*text-align: center;*/
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 60px crimson, 0 0 70px crimson, 0 0 80px crimson;
+  }
+}
+
+
 #landing{
+  /*position:absolute;*/
     height: 100vh;
     /*background-image: url('https://user-images.githubusercontent.com/26179770/37276818-e3e358f4-2608-11e8-9659-05585e92a588.png');*/
     
@@ -83,7 +129,7 @@ body{
       z-index: 0;
       top: 0;
       left:0;
-      height: 100vh;
+      height: 110vh;
       width: 100vw;
       /*background-color:rgba(215,19,137,0.39);*/
       background-color:rgba(40,100,200,0.70);
@@ -134,55 +180,25 @@ body{
 }/*ENDoverlay*/
 
 
-
-
-
-
-
-
-#welcometo{
-    font-family: 'Dancing Script', cursive;
-    margin-top: 15vh;
-    margin-bottom: -5vh;
-    color:white;
-}
-.glow {
-  /*font-size: 80px;*/
-  /*color: #fff;*/
-  /*text-align: center;*/
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
-}
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
-  }
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 60px crimson, 0 0 70px crimson, 0 0 80px crimson;
-  }
-}
-
-
-/*#DC143C CRIMSON*/
-
-
-
-
-
-
-
-
-
-
 .landing-container .kingofnerdslogo {
     
-    height: 80vh;
+    width: 30%;
+    margin-top: 2%;
     top: 50%;
-    /*transform: translate(0%, 20%);*/
 }
+/******************************************************** LANDING AREA! */
 
 
+
+.notsoparallax {
+    background-image: url('../img/bg/keyboard.jpg');
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
 
 .parallax-container {
     border-top, border-bottom: 2px solid dodgerblue;
@@ -201,7 +217,7 @@ body{
     transform: translate(0%, 40%);
     /*background: rgba(40,40,100,0.6);*/
     /*background-color:rgba(40,200,255,0.70);*/
-          background: rgba(49,100,200,0.7);
+          background: rgba(100,100,200,0.7);
 
     border-radius: 20px;
     border: 2px solid dodgerblue;
@@ -212,42 +228,69 @@ body{
 
 
 .endquote {
-    padding-top: 3%;
-    height: 10%;
+
+  border:10px solid rgba(12,4,4,1);
+
+    padding-top: .5%;
+    height: 40vh;
+}
+.bordertop {
+   /*background: rgba(25,10,12,1);*/
+   background: rgba(255,222,173,1);
+   border-top:10px solid rgba(12,4,4,1);
+}
+.borderbottom {
+   /*background: rgba(25,10,12,1);*/
+   background: rgba(255,222,173,1);
+   border-bottom:10px solid rgba(12,4,4,1);
+}
+.endquote .parallax {
+
+-webkit-box-shadow: 0px 0px 112px 69px rgba(0,0,0,0.7) inset;
+-moz-shadow: 0px 0px 112px 69px rgba(0,0,0,0.7) inset;
+box-shadow: 0px 0px 112px 69px rgba(0,0,0,0.7) inset;
+  padding-top: -2%;
+}
+.vignette {
+  position: relative;
 }
 
-footer {
-    
-    background: rgb(60,60,60) !important;
-    /*border-top: 2px solid dodgerblue;*/
-
+.vignette img {
+  display: block;
 }
 
-.page-footer {
-  margin-top: 40px solid #263238 !important;
-  /*background-color: #263238 !important;*/
-
-}
-.page-footer .container {
-
-  padding-top: 30px;
-  /*height: 200px;*/
-  color:white !important;
-  text-shadow: 2px 2px 4px #000000;
-    /*border-bottom: 2px solid dodgerblue;*/
+.vignette:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 0 150px 30px rgba(0, 0, 0, 1) inset;
 }
 
-
-.footercontainer {
-background: rgb(2,0,36);
-background: radial-gradient(circle, rgba(2,0,36,.9) 0%, rgba(9,9,121,.9) 50%, rgba(0,212,255,.9) 100%);
-margin-bottom:-20px;
+.vignetteoverlay {
+  margin-top: -20px;
 }
-.footer-copyright {
-    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
-            0 5px 15px 0 rgba(0,0,0,0.08) !important;
-
+/*.endquote:after {
+    border:20px solid white;
+    z-index: -4;
 }
+*/
+
+
+
+
+
+
+
+/*FOOTER STYLES WERE HERE!!*/
+
+/*FOOTER STYLES WERE HERE!!*/
+
+
+
+
 
 #intro{
     /*margin-top: 10px;*/
@@ -269,6 +312,37 @@ margin-bottom:-20px;
   .abouttext{
       font-size: 20px;
     }
+
+  #platformlinks {
+
+  }
+  #youtubelink:hover {
+    font-family: 'Lato', sans-serif;
+    padding:3px;
+    border:2px solid red;
+    border-radius:5px;
+    background:red;
+    color:white;
+    transition:0.5s ease;
+  }
+  #twitchlink:hover {
+    padding:3px;
+    border:2px solid purple;
+    border-radius:5px;
+    background:purple;
+    color:white;
+    transition:0.5s ease;
+  }
+  #facebooklink:hover {
+    padding:3px;
+    border:2px solid darkblue;
+    border-radius:5px;
+    background:darkblue;
+    color:white;
+    transition:0.5s ease;
+  }
+
+
 
 .frostedglass {
     padding: 50px !important;
@@ -344,10 +418,11 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba
   border: 2px solid dodgerblue;
   border-radius: 8px;
 }
-.card {
+/*.card {
   border: 2px solid dodgerblue;
   border-radius: 8px;
-}
+}*/
+
 
 #contact {
     background-image: url('../img/bg/unsplash.jpg');
@@ -367,11 +442,21 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba
 
 
 
+.contacticons a{
+  /*margin: 5%;*/
+  width: 60px;
+  height: 60px;
+}
+.contacticons .fa{
+  margin-top: 10px;
+  font-size: 40px;
 
+}
+.contacticons .material-icons{
+  margin-top: 10px;
+  font-size: 40px;
 
-
-
-
+}
 
 
 
@@ -421,3 +506,4 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
+

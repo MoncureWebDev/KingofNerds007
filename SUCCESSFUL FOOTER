@@ -1,0 +1,121 @@
+
+        <!-- FOOTER -->
+  <footer class="page-footer">
+
+    <div class="footer-copyright topper blue-grey darken-4 z-depth-5" style="margin-top:-20px !important;">
+      <div class="container">
+      </div>
+    </div>
+    <!-- <div class="footeroverlay"><div class="container"></div></div> -->
+<div class="footercontainer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <img class="responsive-img" src="img/logo/controller.png" title="Come visit us again soon!  Hope you enjoyed your stay!!" style="width: 40%;">
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="">My Streams!</h5>
+          <ul>
+            <li><a class="blue-text" href="https://m.twitch.tv/kingofnerds007/profile" title="Visit my Twitch Stream!!">Twitch</a></li>
+            <li><a class="blue-text" href="https://www.facebook.com/kingofnerds007/" title="Come see me on Facebook!!">Facebook</a></li>
+            <li><a class="blue-text" href="https://www.youtube.com/channel/UCQRplkaanGqpawpdo_IOGRg/featured" title="Check out my Youtube page!!">Youtube</a></li>
+            <!-- <li><a class="" href="#!">Link 4</a></li> -->
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="">Contact Info</h5>
+          <ul>
+            <li><a class="blue-text" href="#!">1 + (012) 345-6789</a></li>
+            <li><a class="blue-text" href="#!">123 Some Street</a></li>
+            <li><a class="blue-text" href="#!">Somewhere, ST, 12345</a></li>
+            <li><a class="blue-text" href="mailto:kingofnerds007gaming@gmail.com">kingofnerds007gaming@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>
+    <!-- blueborder -->
+    <div class="footer-copyright blue-grey darken-4 z-depth-5">
+      <div class="container">
+      &#169; 2020 <a class="blue-text text-lighten-3" href="http://www.kingofnerds007.com">KingofNerds007.com</a>
+      </div>
+    </div>
+    <!-- <div class="footeroverlay"><div class="container"></div></div> -->
+
+  </footer>
+        
+<!-- <script>
+ 
+ $(".button-collapse").sideNav();
+ 
+</script> -->
+
+
+
+
+
+CSS RULES FOR THIS FOOTER!!!!
+
+
+
+footer {
+    
+    background: rgb(60,60,60) !important;
+    /*border-top: 2px solid dodgerblue;*/
+
+}
+
+.page-footer {
+  margin-top: 40px solid #263238 !important;
+  /*background-color: #263238 !important;*/
+
+}
+.page-footer .container {
+
+  padding-top: 30px;
+  /*height: 200px;*/
+  color:white !important;
+  text-shadow: 2px 2px 4px #000000;
+    /*border-bottom: 2px solid dodgerblue;*/
+}
+
+
+.footercontainer {
+/*background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,.9) 0%, rgba(9,9,121,.9) 50%, rgba(0,212,255,.9) 100%);*/
+  background: #606c88;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right,  rgba(63, 76, 107, 1), rgba(96, 108, 136, 1));  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, rgba(63, 76, 107, 1), rgba(96, 108, 136, 1)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+margin-bottom:-20px;
+}
+.footer-copyright {
+  height:-20px !important;
+/*    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+            0 5px 15px 0 rgba(0,0,0,0.08) !important;*/
+ /* background: #606c88;*/  /* fallback for old browsers */
+/*background: -webkit-linear-gradient(to right,  rgba(63, 76, 107, 1), rgba(96, 108, 136, 1));*/  /* Chrome 10-25, Safari 5.1-6 */
+/*background: linear-gradient(to right, rgba(63, 76, 107, 1), rgba(96, 108, 136, 1)); *//* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    /*background-image: url('../img/bg/unsplash.jpg');*/
+    background: linear-gradient(0deg, rgba(40,40,200,0.6), rgba(40,40,200,0.6)), url('../img/bg/unsplash.jpg');
+    /*background-image: linear-gradient(0deg, rgba(255, 0, 0, 0.6), rgba(255, 0, 0, 0.6)), url('http://placekitten.com.s3.amazonaws.com/homepage-samples/408/287.jpg');*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  /*background: rgba(80,80,200,0.7) !important;*/
+  
+}
+.topper {
+  border-top: .5px solid dodgerblue;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+.testimonialscontainer {
+	/*width: 60%;*/
+	overflow: hidden;
+	border-radius: 20px;
+	border: 1px solid dodgerblue;
+	height: 25%;
+	background: rgba(100,100,200,0.2);
+	backdrop-filter: blur(10px);
+}
+.testimonialscontainer h4, h5, p {
+	color:white;
+}
+ 
+.testimonialsheading {
+	color:yellow;
+}
