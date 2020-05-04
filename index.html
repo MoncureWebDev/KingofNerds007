@@ -3,19 +3,57 @@
         <title>KINGOFNERDS007 Gaming!!</title>
 
         <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+       
+
+        <!-- <link rel="stylesheet" href="https://unpkg.com/balloon-css/balloon.min.css"> -->
+        <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">`   -->
+
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
         <!-- Main stylesheet -->
         <link rel="stylesheet" href="css/main.css">
         <link rel="shortcut icon" href="img/logo/favicon.jpg" />
-        <script>
+ <!--        <script>
             $(document).ready(function(){
                 $('.sidenav').sidenav();
             });
-        </script>
+        </script> -->
+
+        <link rel="stylesheet" href="css/navbarnew.css">
+        <link rel="stylesheet" href="css/footernew.css">
+
+
+
+<script>
+      $('.carousel.carousel-slider').carousel({
+    fullWidth: true
+  });
+       
+</script>
+
+
+
+<!--  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </head>
     <body>
@@ -27,23 +65,95 @@
 
 
 
+<!-- CSS NAVBAR!!!!!!!! -->
+
+<!-- <header id="header" class="z-depth-5">
+  <a href="#landing"><img src="img/logo/navbar2.png" title="King of Nerds Gaming!" id="header-img"></a>
+  <nav id="nav-bar" class="z-depth-5">
+    <ul> 
+      <li><a href="#intro" class="nav-link waves-effect waves-light blueglow">About Us</a></li>
+      <li><a href="#platforms" class="nav-link aves-effect waves-light blueglow">My Streams</a></li>
+      <li><a href="#contact" class="nav-link aves-effect waves-light blueglow">Contact</a></li>
+      <li><a href="#" class="nav-link aves-effect waves-light blueglow">Chat</a></li>
+      <li><a href="#" class="nav-link aves-effect waves-light blueglow">Store</a></li>
+      <script>
+          $.alert({
+    title: 'Alert!',
+    content: 'Simple alert!',
+});
+      </script>
+
+  </nav>
+</header> -->
+
+
+
+
+<header class="z-depth-5">
+<nav class="navbarnew">
+
+
+
+                            <a href="#"  class="logo" style="margin-left:0px; margin-top: 30px; width: 52%; height: 100px;"><img class="navlogo" src="img/logo/navbar2.png" title="King of Nerds Gaming!" style="width: 32%; padding-top: 5px"></a>
+
+
+
+
+
+    <!-- <a href="#" class="logo">logo</a> -->
+    <span class="navbar-toggle" id="js-navbar-toggle" style="visibility:hidden;">
+            <i class="fa fa-bars"></i>
+    </span>
+
+
+
+    <ul class="main-nav" id="js-menu">
+      <li>
+        <a href="#intro" class="nav-links blueglow">About Us</a>
+      </li>
+      <li>
+        <a href="#platforms" class="nav-links blueglow">My Streams</a>
+      </li>
+      <li>
+        <a href="#contact" class="nav-links blueglow">Contact</a>
+      </li>
+      <li>
+        <a href="#" class="nav-links blueglow">Chat</a>
+      </li>
+      <li>
+        <a href="#" class="nav-links blueglow">Store</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<script>
+    let mainNav = document.getElementById("js-menu");
+    let navBarToggle = document.getElementById("js-navbar-toggle");
+
+    navBarToggle.addEventListener("click", function() {
+    mainNav.classList.toggle("active");
+    });
+</script>
+
+
+
+
+
+
         <!-- Navbar -->
 
-        <div class="navbar-fixed z-depth-5">      
+        <!-- <div class="navbar-fixed z-depth-5">      
             <nav class="blue-grey darken-4" style="background: rgb(60,60,60) !important;">
                 <div class="container">
                     <div class="nav-wrapper">
                         <ul class="left">
-            <li><a href="#"  class="brand-logo"><img class="navlogo" src="img/logo/navbar2.png" alt="King of Nerds Gaming!" style="width: 32%; padding-top: 5px"></a></li>
+                            <li><a href="#"  class="brand-logo" style="margin-left:-200px; width: 32%; height: 100px;"><img class="navlogo" src="img/logo/navbar2.png" title="King of Nerds Gaming!" style="width: 32%; padding-top: 5px"></a></li>
                         </ul>
-
-
                         <ul class="right hide-on-med-and-down" id="navList">
                             <li><a class="waves-effect waves-light blueglow" href="#landing">
                                 HOME
-                               <!--  <img src="img/HOME.png" style="width: 32%; padding-top: 8px; padding-left: 100px;" alt=""> -->
                             </a></li>
-                            <li><a class="waves-effect waves-light blueglow" href="#intro">
+                            <li><a class="waves-effect waves-light blueglow" aria-title="About Us!" data-balloon-pos="up" href="#intro">
                                 ABOUT US
                             </a></li>
                             <li><a class="waves-effect waves-light blueglow" href="#platforms">
@@ -52,13 +162,17 @@
                             <li><a class="waves-effect waves-light blueglow" href="#contact">
                                 CONTACT
                             </a></li>
+                            <li><a class="waves-effect waves-light blueglow" href="#chat">
+                                CHAT
+                            </a></li>
+                            <li><a class="waves-effect waves-light blueglow" href="#store">
+                                STORE
+                            </a></li>                                                        
                         </ul>
                     </div>
                 </div>
             </nav>
-
-
-        </div>
+        </div> -->
         <!-- Navbar -->
 
 
@@ -67,13 +181,84 @@
 
 
 
+
+
+
+
+<!--       <div class="navbar-fixed z-depth-5">
+                <nav class="deep-orange">
+                  <div class="nav-wrapper">
+                    <div class="col s12">
+                    <a href="#!" class="brand-logo">Logo</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                    <ul class="right hide-on-med-and-down">
+                      <li><a href="sass.html">Sass</a>
+                      </li>
+                      <li><a href="components.html">Components</a>
+                      </li>
+                      <li><a href="javascript.html">Javascript</a>
+                      </li>
+                      <li><a href="mobile.html">Mobile</a>
+                      </li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                      <li><a href="sass.html">Sass</a>
+                      </li>
+                      <li><a href="components.html">Components</a>
+                      </li>
+                      <li><a href="javascript.html">Javascript</a>
+                      </li>
+                      <li><a href="mobile.html">Mobile</a>
+                      </li>
+                    </ul>
+                    </div>
+                  </div>
+                </nav>
+        </div>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <script>
+$(document).ready(function(){
+  $("img.kingofnerdslogo").click(function(){
+    $("kingofnerdslogo").removeClass("zoomIn");
+    $("kingofnerdslogo").addClass("bounce");
+  });
+});
+</script> -->
+
         <!-- Welcome -->
 
         <div class="section" id="landing">
             <div class="landing-container center-align">
-                <h3 id="welcometo" class="center glow">Welcome to...</h3>
+                <h3 id="welcometo" class="center">Welcome to...</h3>
                 <!-- <h1 style="color: white;"  class="center"> -->
-                    <img class="kingofnerdslogo waves-effect waves-light" src="img/logo/AnotherFormTrans800.png" alt="">
+                    <img class="animated zoomIn kingofnerdslogo col s12 md12 l12" src="img/logo/AnotherFormTrans800.png" title="How do you like my logo?!">
                 <!-- </h1> -->
                 <!-- <h4 id="mainText" class="center">Gaming Website!</h4>  -->
             </div>              
@@ -128,11 +313,15 @@
                     <div class="col s12 m12 l3">
                         <img class="responsive-img" src="img/logo/KingIcon.png">
                     </div>
-                    <div class="col s12 m12 offset-l1 l8 frostedglass">
+                    <div class="col s12 m12 offset-l1 l8 frostedglassback">
                         
                         <h5 class="center"><b>Hello!</b></h5>
                         <p class="abouttext">
-                            Welcome to KINGOFNERDS007 Gaming!  This site was built to support several of our streaming platforms... Some text some text some text some text some text some text some text some text.  Some text some text some text some text some text some text some text some text.  Some text some text some text some text some text some text some text some text.  Some text some text some text some text some text some text some text some text.  
+                            Welcome to our site!  My name is Kendall, and I am the founder of KINGOFNERDS007 Gaming!  <a id="kingofnerdsink" href="http://www.kingofnerds007gaming.com">http://www.kingofnerds007gaming.com</a> was built for a number of reasons, but mostly to support a few of our real-time video streaming <a id="platformlinks" href="#platforms">platforms</a>, on <a id="youtubelink" href="#platforms">YouTube</a>, <a id="twitchlink" href="#platforms">Twitch</a>, and <a id="facebooklink" href="#platforms">Facebook</a>.  Be sure to keep exploring further down for more information on these platforms or streaming schedules. Or, if you'd prefer, come join the KINGOFNERDS007 community in our chatroom!</p>  
+                            <br>
+                        
+                        <p class="abouttext">
+                            We are also in the process of building our store, where you will soon be able to purchase official KINGOFNERDS007 merchandise!  So stay tuned, and "Stay classy, my nerdy kingdom!" 
                         </p>
                     </div>
                 </div><!-- row center -->
@@ -166,11 +355,17 @@
                         <img class="responsive-img sociallogo" src="img/streams/youtubelogo.png">
                     </div>
                     <div class="col s12 m12 l4">
-                        <img class="responsive-img sociallogo" src="img/streams/facebooklogo.png">
+                        <img class="responsive-img sociallogo animated swing infinite"
+                         style="animation-duration: 2s; animation-delay: 2s; animation-iteration-count: infinite;"
+                        src="img/streams/facebooklogo.png">
                     </div>
                     <div class="col s12 m12 l4">
                         <img class="responsive-img sociallogo" src="img/streams/twitchlogo.jpg">
                     </div>
+
+<!-- animated flash" style="width: 50px; height: 50px; animation-duration: 2s; animation-delay: 2s; animation-iteration-count: infinite; -->
+
+
 
                 </div>
             </div>
@@ -179,53 +374,53 @@
 
         <!--Work-->
         <div class="parallax-container" style="height: auto; padding: 50px !important; padding-top: 3%; " id="mystreams">
-            <div  class="parallax">
-                <img src="img/bg/keyboard.jpg">                
+            <div  class="parallax notsoparallax">
+                <!-- <img src="img/bg/keyboard.jpg">                 -->
             </div>
             <div class="container">
                <!--  <h3 class="header text_b center">My Streaming Feeds! </h3> -->
                 <div class="row ">
                     <div class="col s12 m12 l4">
-                        <div class="card  black">
+                        <div id="platformcards" class="card  black">
                             <div class="card-image waves-effect waves-block waves-light">
                                 <img class="activator" src="img/streams/Youtube.png">
                             </div>
                             <div class="card-content">
                                 <span class="card-title activator purple-text text-lighten-5">YOUTUBE STREAM INFO <i class="mdi-navigation-more-vert right"></i></span>
-                                <p><a class="purple-text text-lighten-5" href="https://m.youtube.com/channel/UCQRplkaanGqpawpdo_IOGRg">Go there!</a></p>
+                                <p><a target="_blank" class="purple-text text-lighten-5" href="https://m.youtube.com/channel/UCQRplkaanGqpawpdo_IOGRg">Go there!</a></p>
                             </div>
                             <div class="card-reveal  black">
-                                <span class="card-title purple-text text-lighten-5">YOUTUBE STREAM INFO<i class="mdi-navigation-close right"></i></span>
+                                <span class="card-title purple-text text-lighten-5">Go back...<i class="mdi-navigation-close right"></i></span>
                                 <p>info about this stream...</p>
                             </div>
                         </div>
                     </div>  
                     <div class="col s12 m12 l4">
-                        <div class="card  black">
+                        <div id="platformcards" class="card  black">
                             <div class="card-image waves-effect waves-block waves-light">
                                 <img class="activator" src="img/streams/Facebook.png">
                             </div>
                             <div class="card-content">
                                 <span class="card-title activator purple-text text-lighten-5">FACEBOOK STREAM INFO<i class="mdi-navigation-more-vert right"></i></span>
-                                <p><a class="purple-text text-lighten-5" href="#">Go there!</a></p>
+                                <p><a target="_blank" class="purple-text text-lighten-5" href="https://www.facebook.com/kingofnerds007/">Go there!</a></p>
                             </div>
                             <div class="card-reveal  black">
-                                <span class="card-title purple-text text-lighten-5">FACEBOOK STREAM INFO<i class="mdi-navigation-close right"></i></span>
+                                <span class="card-title purple-text text-lighten-5">Go back...<i class="mdi-navigation-close right"></i></span>
                                 <p>Here is some information about this stream that is only revealed once clicked on.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col s12 m12 l4">
-                        <div class="card  black">
+                        <div id="platformcards" class="card  black">
                             <div class="card-image waves-effect waves-block waves-light">
                                 <img class="activator" src="img/streams/Twitch.png">
                             </div>
                             <div class="card-content">
                                 <span class="card-title activator purple-text text-lighten-5">TWITCH STREAM INFO<i class="mdi-navigation-more-vert right"></i></span>
-                                <p><a class="purple-text text-lighten-5" href="#">Go there!</a></p>
+                                <p><a target="_blank" class="purple-text text-lighten-5" href="https://m.twitch.tv/kingofnerds007/profile">Go there!</a></p>
                             </div>
                             <div class="card-reveal  black">
-                                <span class="card-title purple-text text-lighten-5">TWITCH STREAM INFO<i class="mdi-navigation-close right"></i></span>
+                                <span class="card-title purple-text text-lighten-5">Go back...<i class="mdi-navigation-close right"></i></span>
                                 <p>Here is some more information about this stream that is only revealed once clicked on.</p>
                             </div>
                         </div>
@@ -233,7 +428,105 @@
                     
                 </div>
             </div>
+
+
+
+
+
+
+ <div class="row ">
+    <div class="col s12 m2 l2"><div class="content"></div></div>
+    <div class="col s12 m12 l8">
+        <link rel="stylesheet" href="css/testimonials.css">
+        <h4 class="testimonialsheading center">Testimonials:</h4>
+        <!-- TESTIMONIALS LAYER -->
+        <div class="testimonialscontainer">
+            
+        <!-- <h4 class="testimonialsheading center">Testimonials:</h4> -->
+        <div class="carousel carousel-slider" id="demo-carousel-auto">
+            <!--REMOVED: data-indicators="true" -->
+            <a class="carousel-item" href="#one!">
+                <div class="container center">
+                <h4 class="center">Great streams!</h4>
+                <h5>"Kendall's Twitch streams are awesome to watch!"</h5>
+                <p><i>~ Dave</i></p>
+                </div>
+            </a>
+            <a class="carousel-item" href="#two!">
+                <div class="container center">
+                <h4 class="center">Awesome!</h4>
+                <h5>"A lot of fun!  Come check these streams out!"</h5>
+                <p><i>~ Mike</i></p>
+                </div>
+            </a>
+
         </div>
+        </div>
+
+
+        
+<!-- TESTIMONIALS LAYER -->
+ <div class="col s12 m2 l2"><div class="content"></div></div>
+</div><!-- <div class="col s12 m12 l12"> -->
+</div><!-- <div class="row "> -->
+
+
+<!-- **************************  PLATFORM STREAMING SCHEDULES **************************** -->
+        <div class="container-fluid">
+            <div class="row">
+                 <div class="col s12 m2 l2"><div class="content"></div></div>
+                <link rel="stylesheet" href="css/platformstreamingschedules.css">
+                <div class="col s12 m12 l8 center platformstreamingschedules">
+                <h2 id="streamingscheduletitle" class="">Upcoming Streams Schedule!</h2>
+                  <table class="responsive-table centered highlight">
+                    <thead>
+                      <tr>
+                          <th>Date:</th>
+                          <th>Platform:</th>
+                          <th>Time:</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>1/20/2020</td>
+                        <td><h5><a target="_blank" id="twitchlink" href="https://m.twitch.tv/kingofnerds007/profile">twitch</a></h5></td>
+                        <td>4:00pm EST</td>
+                      </tr>
+                      <tr>
+                        <td>1/20/2020</td>
+                        <td><h5><a target="_blank" id="twitchlink" href="https://m.twitch.tv/kingofnerds007/profile">twitch</a></h5></td>
+                        <td>4:00pm EST</td>
+                      </tr>
+                      <tr>
+                        <td>1/20/2020</td>
+                        <td><h5><a target="_blank" id="twitchlink" href="https://m.twitch.tv/kingofnerds007/profile">twitch</a></h5></td>
+                        <td>4:00pm EST</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+              </div>
+               <div class="col s12 m2 l2"><div class="content"></div></div>
+
+            </div>
+        </div>
+
+<!-- **************************  PLATFORM STREAMING SCHEDULES **************************** -->
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
       <div class="section blue-grey darken-4" id="platformfooter">
             <div class="container">
                 <div class="row">
@@ -247,6 +540,28 @@
             </div>
         </div>
     <!-- </div> --><!-- PARALLAX DIV CONTAINER! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  
@@ -264,23 +579,24 @@
 <!-- ****************************************   Add FIXED ACTION BUTTON -->
 
         <div class="fixed-action-btn vertical">
-            <a class="btn-floating btn-large waves-effect waves-light red" style="width: 50px; height: 50px">
+            <a class="btn-floating btn-large waves-effect waves-light red animated heartBeat infinite" style="width: 50px; height: 50px;">
+                <!-- REMOVED:   animation-duration: 2s; animation-delay: 2s; animation-iteration-count: infinite; -->
                 <i class="fa fa-globe fa-5x" style="font-size: 45px; margin-top: -3px;"></i>
             </a>
             <ul>
                 <!-- FACEBOOK -->
-                <li><a target="_blank" href="https://www.facebook.com/kingofnerds007/" class="btn-floating  blue darken-4"><i class="fa fa-facebook"></i></a></li>
+                <li><a target="_blank" href="https://www.facebook.com/kingofnerds007/" title="Visit me on Faceook!!" class="btn-floating z-depth-5 blue darken-4"><i class="fa fa-facebook"></i></a></li>
 
                 <!-- TWITCH -->
-                <li><a target="_blank" href="https://m.twitch.tv/kingofnerds007/profile" class="btn-floating cyan lighten-1"><i class="fa fa-twitch"></i></a></li>
+                <li><a target="_blank" href="https://m.twitch.tv/kingofnerds007/profile" title="Visit my Twitch Stream!!" class="btn-floating z-depth-5 purple lighten-1"><i class="fa fa-twitch"></i></a></li>
                 
                 <!-- YOUTUBE -->
-                <li><a target="_blank" href="https://m.youtube.com/channel/UCQRplkaanGqpawpdo_IOGRg" class="btn-floating grey darken-3"> <i class="fa fa-youtube"></i></a></li>
+                <li><a target="_blank" href="https://m.youtube.com/channel/UCQRplkaanGqpawpdo_IOGRg" title="Check out my Youtube page!!" class="btn-floating z-depth-5 red darken-3"> <i class="fa fa-youtube"></i></a></li>
                 
                 <!-- EMAIL -->
-                <li><a target="_blank" href="mailto:kingofnerds007gaming@gmail.com" 
-                    class="btn-floating cyan lighten-1"><i class="material-icons">email</i>
-</a></li>
+                <li><a target="_blank" href="mailto:kingofnerds007gaming@gmail.com" title="Email me!!"
+                    class="btn-floating z-depth-5 grey darken-2"><i class="material-icons">email</i>
+                </a></li>
             </ul>
         </div>
 <!-- ****************************************   Add FIXED ACTION BUTTON -->
@@ -327,13 +643,13 @@
                     </div>
                 </div>
                 <div class="row center">
-                    <div class="col s12 m12 l12 frostedglassback">                        
+                    <div class="col s12 l12 frostedglassback">                        
                         <div class="container frostedglassopague">
                             <div class="row">
-                                <div class="col m10 s12 l12">
+                                <div class="col s12 l12">
                                     <h2 class="center-align" style="text-shadow: 2px 2px 4px #000000;">Contact Us!</h2>
                                     <div class="row">
-                                        <form class="col m8 s12 l12">
+                                        <form class="col s12 l12">
                                             <div class="row">
                                                 <div class="input-field col s12 l12">
                                                     <input id="name" type="text">
@@ -352,13 +668,41 @@
                                             <div class="divider"></div>
                                             <div class="row">
                                                 <div class="col m12">
-                                                 <p class="right-align"><button class="btn btn-large blue-grey waves-effect waves-light" type="button" name="action">Send Message</button></p>
+                                                 <p class="right-align"><button class="btn btn-large z-depth-5 blue-grey waves-effect waves-light" type="button" name="action">Send Message</button></p>
                                                 </div>
                                             </div>
                                         </form>
                                     </div>
                                 </div>
                             </div>
+                            <!-- SOCIAL ICONS -->
+                            <div class="row contacticons">
+                                <div class="col s12 l12">
+                                        <div class="col s3 l3">
+                                           <!-- FACEBOOK -->
+                                            <a target="_blank" href="https://www.facebook.com/kingofnerds007/" title="Visit me on Faceook!!" class="btn-floating z-depth-5 blue darken-4"><i class="fa fa-facebook"></i></a>
+                                        </div>
+                                        <div class="col s3 l3">
+                                            <!-- TWITCH -->
+                                            <a target="_blank" href="https://m.twitch.tv/kingofnerds007/profile" title="Visit my Twitch Stream!!" class="btn-floating z-depth-5 purple lighten-1"><i class="fa fa-twitch"></i></a>
+                                        </div>
+                                        <div class="col s3 l3"> 
+                                            <!-- YOUTUBE -->
+                                            <a target="_blank" href="https://m.youtube.com/channel/UCQRplkaanGqpawpdo_IOGRg" title="Check out my Youtube page!!" class="btn-floating z-depth-5 red darken-3"> <i class="fa fa-youtube"></i></a>
+                                        </div>
+                                           
+
+                                        <div class="col s3 l3">
+                                            <!-- EMAIL -->
+                                            <a target="_blank" href="mailto:kingofnerds007gaming@gmail.com" title="Email me!!"
+                                                class="btn-floating z-depth-5 grey darken-3"><i class="material-icons">email</i>
+                                            </a>
+                                        </div>
+                                </div>
+                            </div>
+                            <!-- SOCIAL ICONS -->
+
+
                         </div>
                     </div>
                 </div><!-- row center -->
@@ -367,29 +711,32 @@
 
 
 
-    <!--    <div class="section blue-grey darken-4" id="">
+
+
+
+
+
+
+
+
+       <div class="section bordertop" id="">
             <div class="container">
                 <div class="row">
-                    <h5 class="center white-text">
-                        Before you go.....
-                    </h5>
+
                 </div>
                 <div class="row center">
 
                 </div>
             </div>
-        </div> -->
-
-
-
+        </div>
         <!--Quote Parallax-->
          <div id="p1" class="parallax-container endquote">
-            <div  class="parallax">
-                <img src="img/bg/sunset2.jpg">
-                
+            <div  class="parallax vignette">
+                <img src="img/bg/sunset3.jpg">
             </div>
+            <h6 class="center" style="color:white; text-shadow: 2px 2px 4px #000000;">Before you go....</h6>
             <div class="container">
-                <div class="overlay">
+                <div class="overlay vignetteoverlay">
                     <div class="row">
                         <div class="col s12 center white-text">
                             <!-- <h1><b>QUOTE</b></h1> -->
@@ -403,7 +750,16 @@
             </div>               
         </div>
 
+       <div class="section borderbottom" id="">
+            <div class="container">
+                <div class="row">
 
+                </div>
+                <div class="row center">
+
+                </div>
+            </div>
+        </div>
 
 
 
@@ -415,56 +771,83 @@
         <!-- FOOTER -->
   <footer class="page-footer">
 
-    <div class="footer-copyright blue-grey darken-4" style="margin-top:-20px !important;">
+    <div class="footer-copyright topper blue-grey darken-4 z-depth-5" style="margin-top:-20px !important;">
       <div class="container">
-      </div>
-    </div>
-<div class="footercontainer">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <img class="responsive-img" src="img/logo/controller.png" style="width: 40%;">
+  
+    <!-- <div class="footeroverlay"><div class="container"></div></div> -->
+                <div class="footercontainer center z-depth-5">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col l6 s12">
+                          <img class="responsive-img" src="img/logo/controller.png" title="Come visit us again soon!  Hope you enjoyed your stay!!" style="
+                          width: 60%; animation-duration: 2s; animation-delay: 2s; animation-iteration-count: infinite;
 
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="">My Streams!</h5>
-          <ul>
-            <li><a class="blue-text" href="https://m.twitch.tv/kingofnerds007/profile">Twitch</a></li>
-            <li><a class="blue-text" href="https://www.facebook.com/kingofnerds007/">Facebook</a></li>
-            <li><a class="blue-text" href="https://www.youtube.com/channel/UCQRplkaanGqpawpdo_IOGRg/featured">Youtube</a></li>
-            <!-- <li><a class="" href="#!">Link 4</a></li> -->
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="">Contact Info</h5>
-          <ul>
-            <li><a class="blue-text" href="#!">1 + (012) 345-6789</a></li>
-            <li><a class="blue-text" href="#!">123 Some Street</a></li>
-            <li><a class="blue-text" href="#!">Somewhere, ST, 12345</a></li>
-            <li><a class="blue-text" href="mailto:kingofnerds007gaming@gmail.com">kingofnerds007gaming@gmail.com</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-</div>
+                          "><br>
+                          &#169; 2020 <a class="blue-text text-lighten-3" href="http://www.kingofnerds007.com">KingofNerds007.com</a>
+                        </div>
+                        <div class="col l3 s12">
+                          <h5 class="">My Streams!</h5>
+                          <ul>
+                            <li><a class="blue-text" href="https://m.twitch.tv/kingofnerds007/profile" title="Visit my Twitch Stream!!">Twitch</a></li>
+                            <li><a class="blue-text" href="https://www.facebook.com/kingofnerds007/" title="Come see me on Facebook!!">Facebook</a></li>
+                            <li><a class="blue-text" href="https://www.youtube.com/channel/UCQRplkaanGqpawpdo_IOGRg/featured" title="Check out my Youtube page!!">Youtube</a></li>
+                            <!-- <li><a class="" href="#!">Link 4</a></li> -->
+                          </ul>
+                        </div>
+                        <div class="col l3 s12">
+                          <h5 class="">Contact Info</h5>
+                          <ul>
+                            <li><a class="blue-text" href="#!">1 + (012) 345-6789</a></li>
+                            <li><a class="blue-text" href="#!">123 Some Street</a></li>
+                            <li><a class="blue-text" href="#!">Somewhere, ST, 12345</a></li>
+                            <li><a class="blue-text" href="mailto:kingofnerds007gaming@gmail.com">kingofnerds007gaming@gmail.com</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                </div>
     <!-- blueborder -->
-    <div class="footer-copyright blue-grey darken-4">
+    <!-- <div class="footer-copyright blue-grey darken-4 z-depth-5">
       <div class="container">
       &#169; 2020 <a class="blue-text text-lighten-3" href="http://www.kingofnerds007.com">KingofNerds007.com</a>
       </div>
+    </div> -->
+    <!-- <div class="footeroverlay"><div class="container"></div></div> -->
+
+
+
+        </div>
+        <!-- container -->
     </div>
   </footer>
         
-<script>
- 
- $(".button-collapse").sideNav();
- 
-</script>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+
+
+
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script> -->
         <script src="js/main.js"></script>
+
+<script>
+$(document).ready(function(){
+ $('#demo-carousel-auto').carousel();
+  setInterval(function() {
+    $('#demo-carousel-auto').carousel('next');
+  }, 3000);     
+});
+</script>
+
+<!-- <script>
+      $('.carousel.carousel-slider').carousel({
+    fullWidth: true
+  });
+</script> -->
     </body>
 </html>

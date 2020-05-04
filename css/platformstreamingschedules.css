@@ -1,0 +1,65 @@
+#platformcards {
+  border: 2px solid dodgerblue;
+  border-radius: 8px;
+}
+#platformcards a {
+	color: white;
+	background: rgba(100,100,255,0.6);
+	border:1px solid dodgerblue;
+	border-radius: 8px;
+	padding: 10px;
+	margin: 8px;
+}
+#platformcards .card-title {
+	color: red;
+	background: rgba(255,80,80,0.3);
+	border: 1px solid red;
+	border-radius: 8px;
+	padding: 8px;
+	margin: 10px;
+}
+
+/*#platformcards:hover {
+  
+  width:102%;
+  transition:0.5s ease;
+
+}*/
+
+
+.platformstreamingschedules {
+	/*width: 60%;*/
+	margin-top: 40px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	overflow: hidden;
+	border-radius: 20px;
+	border: 1px solid dodgerblue;
+	box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+	box-shadow: 0 0 20px #fff, 0 0 30px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 60px crimson, 0 0 70px crimson, 0 0 80px crimson;
+	height:auto;
+	background: rgba(100,100,200,0.5);
+	backdrop-filter: blur(10px);
+}
+.platformstreamingschedules h2, th, td {
+	color:white;
+}
+#streamingscheduletitle {
+	color:white !important;
+  /*text-shadow: 2px 2px 4px #000000;*/
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+}
+.platformstreamingschedules table.highlight > tbody > tr:hover {
+ 
+  background-color: rgba(255, 100, 100, 0.5);
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+ 
+}
+  #twitchlink:hover {
+    padding:3px;
+    border:2px solid purple;
+    border-radius:5px;
+    background:purple;
+    color:white;
+    transition:0.5s ease;
+  }
